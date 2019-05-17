@@ -32,7 +32,7 @@ export default class extends Vue {
     }
 }
 </script>
-<template>
+<template >
   <v-app>
     <v-container>
       <v-layout row>

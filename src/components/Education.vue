@@ -11,7 +11,7 @@ export default class extends Vue {
 
 <template>
     <v-flex xs12 md8>
-        <div class="title font-weight-regular mt-4">Education</div>
+        <div class="title font-weight-regular md-4">Education</div>
         <br>
         <v-card v-for="e in education" :key="e.institution" class="mb">
             <v-container fluid grid-list-lg>
