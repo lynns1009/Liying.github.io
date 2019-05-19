@@ -13,7 +13,7 @@ export default class extends Vue {
     <v-flex xs12 md8>
         <div class="title font-weight-regular md-4">Education</div>
         <br>
-        <v-card v-for="e in education" :key="e.institution" class="mb">
+        <v-card v-for="e in education" :key="e.institution" class="md-8">
             <v-container fluid grid-list-lg>
                 <v-layout row>
                     <v-flex xs12>
@@ -22,14 +22,6 @@ export default class extends Vue {
                         <div class="body-2 font-weight-regular">{{e.years}}</div>
                         
                     </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                    <v-chip v-for="t in e.hightlights"
-                            :key="t"
-                            outline
-                            small
-                            color="secondary"
-                            disabled>{{t}}</v-chip>
                 </v-layout>
             </v-container>
         </v-card>
